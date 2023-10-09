@@ -1,0 +1,150 @@
+@define-color bg-hover #1A1A28;
+@define-color bg #1E1E2E;
+@define-color fg #5CF;
+@define-color dark-fg #161320;
+@define-color border @fg;
+
+* {
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  font-family: "SF Pro", "Lilex Nerd Font";
+  font-size: 12pt;
+  padding-bottom: 1px;
+}
+
+tooltip {
+  background: @bg;
+  border-radius: 7px;
+  border: 2px solid @border;
+}
+
+window#waybar {
+  background-color: transparent;
+  color: @fg;
+}
+
+#custom-pacman {
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 15px;
+  background-color: @fg;
+  color: @bg;
+  border-radius: 7px;
+}
+
+#window {
+	margin: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 7px;
+	background-color: @bg;
+	color: @fg;
+}
+
+#workspaces {
+	margin: 5px;
+	padding: 3px;
+	padding-left: 1px;
+	padding-right: 1px;
+	border-radius: 7px;
+	background-color: @bg;
+	color: @fg;
+}
+
+#workspaces button {
+	margin-left: 2px;
+	margin-right: 2px;
+	border-radius: 7px;
+	background-color: #0af;
+	color: @bg;
+}
+
+#workspaces button.active {
+	background-color: @fg;
+}
+
+#mode {
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 7px;
+  background-color: @bg;
+  color: @fg;
+}
+
+#tray {
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 7px 7px;
+  background-color: @bg;
+}
+
+#network {
+  margin: 5px 0px 5px 0;
+  padding-left: 10px;
+  padding-right: 15px;
+  border-radius: 7px 0px 0px 7px;
+  background-color: @bg;
+  color: @fg;
+}
+/* #network.wifi, */
+/* #network.ethernet { */
+/*   color: @green; */
+/* } */
+#network.linked {
+  color: @fg;
+}
+#network.disconnected,
+#network.disabled {
+  color: @fg;
+}
+
+#pulseaudio,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#battery,
+#custom-pipewire {
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 7px;
+  color: @fg;
+  background-color: @bg;
+}
+
+#pulseaudio,
+#backlight,
+#battery,
+#custom-pipewire {
+	margin-left: 0px;
+	margin-right: 0px;
+	border-radius: 0px;
+}
+
+#battery.good {
+	color: #7f7;
+}
+#battery.warning {
+	color: #f77;
+}
+#battery.critical {
+	color: #f00;
+}
+
+
+#clock {
+  margin: 5px;
+  margin-left: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0px 7px 7px 0px;
+  color: @fg;
+  background-color: @bg;
+}
+
+/* bottom waybar */
